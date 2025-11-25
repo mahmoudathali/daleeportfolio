@@ -21,7 +21,7 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           <a
-            href="mailto:daleelahade@gmail.com"
+            href="mailto:dalilaadedjouma2005@gmail.com"
             className="group p-8 bg-white border-2 border-primary-100 hover:border-accent-teal shadow-sm hover:shadow-lg transition-all duration-300 rounded-sm"
           >
             <div className="flex items-start gap-4">
@@ -31,7 +31,7 @@ export default function Contact() {
               <div className="flex-1">
                 <h3 className="text-xs uppercase tracking-widest text-primary-600 mb-2 font-light">Email</h3>
                 <p className="text-base text-primary-900 font-light break-all group-hover:text-accent-teal transition-colors duration-300">
-                  daleelahade@gmail.com
+                  dalilaadedjouma2005@gmail.com
                 </p>
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function Contact() {
 
             <div className="flex justify-center gap-4">
               <a
-                href="mailto:daleelahade@gmail.com"
+                href="mailto:dalilaadedjouma2005@gmail.com"
                 className="px-8 py-3 bg-gradient-to-r from-accent-teal to-accent-teal-light text-white text-sm font-light tracking-wide hover:shadow-lg hover:shadow-accent-teal/30 transition-all duration-300 rounded-sm inline-flex items-center gap-2"
               >
                 <Send size={16} strokeWidth={2} />
