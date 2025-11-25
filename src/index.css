@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-white;
+  }
+
+  * {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/80 border border-white/20 shadow-lg;
+  }
+
+  .accent-teal {
+    @apply text-accent-teal hover:text-accent-teal-light transition-colors;
+  }
+
+  .accent-blue {
+    @apply text-accent-blue hover:text-accent-blue-light transition-colors;
+  }
+
+  .btn-primary {
+    @apply px-8 py-3 bg-primary-900 text-white text-sm font-light tracking-wide rounded-sm hover:bg-accent-teal transition-all duration-300 shadow-sm hover:shadow-md;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 border border-primary-900 text-primary-900 text-sm font-light tracking-wide rounded-sm hover:bg-primary-900 hover:text-white transition-all duration-300;
+  }
+
+  .card-minimal {
+    @apply p-8 bg-white border border-primary-200 hover:border-accent-teal transition-all duration-300 rounded-sm;
+  }
+
+  .card-subtle {
+    @apply p-8 bg-primary-50 border border-primary-100 hover:border-accent-teal-light transition-all duration-300 rounded-sm;
+  }
+
+  .divider-accent {
+    @apply w-12 h-1 bg-gradient-to-r from-accent-teal to-accent-teal-light rounded-full;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-900 via-accent-slate to-primary-700 bg-clip-text text-transparent;
+  }
+}
